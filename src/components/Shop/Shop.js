@@ -16,6 +16,10 @@ const Shop = () => {
         const newCart = [...cart, product]
         setCart(newCart)
     }
+    const removeFromCart = () => {
+        const newCart = []
+        setCart(newCart)
+    }
     return (
         <div className='shop-container'>
             <div className="products">
@@ -29,8 +33,16 @@ const Shop = () => {
                     {
                         cart.map(item => <Cart key={item.id} item={item}></Cart>)
                     }
-                    <div><button className='random-btn'><p>CHOOSE 1 FOR ME</p></button></div>
-                    <div><button className='choose-btn'><p>CHOOSE AGAIN</p></button></div>
+                    <div>
+                        <button className='random-btn'>
+                            <p>CHOOSE 1 FOR ME</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button className='choose-btn' onClick={() => { removeFromCart() }}>
+                            <p>CHOOSE AGAIN</p>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

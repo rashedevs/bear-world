@@ -1,5 +1,13 @@
 .header{
-    color: orangered;
+    color: crimson;
     background-color: bisque;
     padding: 3px;
+}
+.header h1{
+    margin-bottom: 2px;
+}
+.header h3{
+    margin-top: 0px;
+    font-family:cursive;
+    font-weight: 400;
 }
