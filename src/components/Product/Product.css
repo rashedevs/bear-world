@@ -1,0 +1,28 @@
+.product{
+    border: 1px solid rgb(216, 160, 171);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    background-color: bisque;
+}
+.product img{
+    height: 220px;
+    width: 280px;
+}
+.product-btn{
+    padding:4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    color: white;
+    background-color: crimson;
+}
+.product-btn p{
+    margin:8px 10px;
+}
+.product-btn:hover{
+   background-color:orangered;
+}
