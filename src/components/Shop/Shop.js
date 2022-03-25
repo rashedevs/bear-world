@@ -16,6 +16,13 @@ const Shop = () => {
         const newCart = [...cart, product]
         setCart(newCart)
     }
+    const pickRandom = () => {
+        let newCart = [...cart]
+        // console.log(newCart)
+        let picked = newCart[Math.floor(Math.random() * newCart.length)]
+        newCart = [picked]
+        setCart(newCart)
+    }
     const removeFromCart = () => {
         const newCart = []
         setCart(newCart)
@@ -34,7 +41,7 @@ const Shop = () => {
                         cart.map(item => <Cart key={item.id} item={item}></Cart>)
                     }
                     <div>
-                        <button className='random-btn'>
+                        <button className='random-btn' onClick={() => pickRandom()}>
                             <p>CHOOSE 1 FOR ME</p>
                         </button>
                     </div>
