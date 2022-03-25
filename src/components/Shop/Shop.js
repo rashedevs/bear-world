@@ -55,5 +55,4 @@ const Shop = () => {
         </div>
     );
 };
-
 export default Shop;
