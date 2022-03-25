@@ -1,8 +1,39 @@
 .shop-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 5px;
 }
 .products{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.cart-container{
+    background-color: rgb(248, 221, 225);
+}
+.cart-items{
+    position: sticky;
+    top: 0;
+}
+.random-btn{
+    color: white;
+    background-color: rgb(58, 197, 58);
+    margin: 8px 5px;
+    border: none;
+    border-radius: 5px;
+}
+.random-btn p{
+    margin:3px;
+    padding: 4px;
+}
+.choose-btn{
+    color: white;
+    background-color: cadetblue;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 5px;
+}
+.choose-btn p{
+    margin: 3px;
+    padding: 4px;
 }

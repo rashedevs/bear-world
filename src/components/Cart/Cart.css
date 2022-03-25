@@ -1,0 +1,12 @@
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.cart-item img{
+    border-radius: 40px;
+    height: 60px;
+    width: 60px;
+    margin: 0px 10px;
+}
