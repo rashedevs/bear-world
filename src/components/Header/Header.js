@@ -6,8 +6,8 @@ import './Header.css'
 const Header = () => {
     return (
         <div className='header'>
-            <h1>Bear World</h1>
-            <h3>your beloved teddy <FontAwesomeIcon icon={faCat} /></h3>
+            <h2>Bear World</h2>
+            <h6>your beloved teddy <FontAwesomeIcon icon={faCat} /></h6>
         </div>
     );
 };

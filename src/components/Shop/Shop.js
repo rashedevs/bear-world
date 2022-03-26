@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Bonus from '../Bonus/Bonus';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css'
@@ -19,38 +20,47 @@ const Shop = () => {
     const pickRandom = () => {
         let newCart = [...cart]
         // console.log(newCart)
-        let picked = newCart[Math.floor(Math.random() * newCart.length)]
-        newCart = [picked]
-        setCart(newCart)
+        if (newCart.length >= 2) {
+            let picked = newCart[Math.floor(Math.random() * newCart.length)]
+            newCart = [picked]
+            setCart(newCart)
+        }
     }
     const removeFromCart = () => {
         const newCart = []
         setCart(newCart)
     }
     return (
-        <div className='shop-container'>
-            <div className="products">
-                {
-                    products.map(product => <Product key={product.id} product={product} handleCart={handleCart}></Product>)
-                }
-            </div>
-            <div className="cart-container">
-                <div className="cart-items">
-                    <h2>Selected Items</h2>
+        <div>
+            <div className='shop-container'>
+                <div className="products-container">
                     {
-                        cart.map(item => <Cart key={item.id} item={item}></Cart>)
+                        products.map(product => <Product key={product.id} product={product} handleCart={handleCart}></Product>)
                     }
-                    <div>
-                        <button className='random-btn' onClick={() => pickRandom()}>
-                            <p>CHOOSE 1 FOR ME</p>
-                        </button>
-                    </div>
-                    <div>
-                        <button className='choose-btn' onClick={() => { removeFromCart() }}>
-                            <p>CHOOSE AGAIN</p>
-                        </button>
+                </div>
+                <div className="cart-container">
+                    <div className="cart-items">
+                        <h4 className="text-primary mb-3 mt-4">Selected Items</h4>
+                        {
+                            cart.map(item => <Cart key={item.id} item={item}></Cart>)
+                        }
+                        <div>
+                            <button className='random-btn' onClick={() => pickRandom()}>
+                                <p>CHOOSE 1 FOR ME</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button className='choose-btn' onClick={() => { removeFromCart() }}>
+                                <p>CHOOSE AGAIN</p>
+                            </button>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div className='bonus-container'>
+                {
+                    <Bonus></Bonus>
+                }
             </div>
         </div>
     );
