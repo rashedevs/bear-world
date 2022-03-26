@@ -7,7 +7,6 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([])
-    // console.log(cart)
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -24,9 +23,9 @@ const Shop = () => {
     }
     const pickRandom = () => {
         let newCart = [...cart]
-        // console.log(newCart)
         if (newCart.length) {
-            let picked = newCart[Math.floor(Math.random() * newCart.length)]
+            let num = Math.floor(Math.random() * newCart.length)
+            let picked = newCart[num]
             newCart = [picked]
             setCart(newCart)
         }

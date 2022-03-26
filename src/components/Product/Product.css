@@ -6,8 +6,10 @@
     background-color: bisque;
 }
 .product img{
+    border-radius: 5px;
     height: 220px;
     width: 280px;
+    margin-bottom: 5px;
 }
 .product-btn{
     display: flex;

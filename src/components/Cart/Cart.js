@@ -6,7 +6,7 @@ const Cart = (props) => {
     return (
         <div className='cart-item'>
             <img src={img} alt="" />
-            <h5>{name}</h5>
+            <h6>{name}</h6>
         </div>
     );
 };
