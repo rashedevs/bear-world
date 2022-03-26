@@ -18,9 +18,8 @@ const Bonus = () => {
                         data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                             <p>
-                                As we know, javascript is a synchronous, single-threaded, interpreted language. It can run
-                                through any modern browser engine or Node.js runtime.
-                                The Execution context of the engine is consist of two main components, a heap..
+                                React implements a virtual DOM that is essentially a DOM tree representation in javascript. So whilst it desires to examine or write to the DOM, it's going to use the virtual illustration of it. Then the virtual DOM will attempt to locate the maximum green way to update the browser's dom.
+                                Not like browser DOM factors, react factors are simple objects and are cheap to create. React DOM takes care of updating the DOM to enrich the react elements. The motive for that is that javascript is very rapid and it's really worth preserving a DOM tree in it to speed up its manipulation.
                             </p>
                         </div>
                     </div>
@@ -36,9 +35,8 @@ const Bonus = () => {
                         data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                             <p>
-                                As we know, javascript is a synchronous, single-threaded, interpreted language. It can run
-                                through any modern browser engine or Node.js runtime.
-                                The Execution context of the engine is consist of two main components, a heap..
+                                We can access data from the previous factor the use of props as the data is being flowed in a unidirectional manner. React uses information transmission props that we want to transfer to various additives.
+                                The difference comes in which factor the data are owned. State is owned locally and the element itself updates it. Props are owned and read-handiest by a discern. Props may be changed only if an upstream shift is due to a callback characteristic exceeded directly to the child. A prop can be passed on to the child in the state of a figure. They practice to the same value but can only be updated by the parent variable.
                             </p>
                         </div>
                     </div>
@@ -54,9 +52,7 @@ const Bonus = () => {
                         data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                             <p>
-                                As we know, javascript is a synchronous, single-threaded, interpreted language. It can run
-                                through any modern browser engine or Node.js runtime.
-                                The Execution context of the engine is consist of two main components, a heap..
+                                As we know, It's not possible to update the props a component receives; only to read them. React provides an expansion of special features that allows us to offer new abilities to additives, like state. useState is a hook that allows us to have state variables in useful additives. By passing the initial state to this function, it returns a variable with the cutting-edge state value (now not always the initial state) and any other function to replace this value.
                             </p>
                         </div>
                     </div>

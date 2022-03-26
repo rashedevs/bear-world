@@ -14,21 +14,26 @@ const Shop = () => {
             .then(data => setProducts(data))
     }, [])
     const handleCart = (product) => {
-        const newCart = [...cart, product]
-        setCart(newCart)
+        if (cart.length >= 4) {
+            alert("Can't add more than 4 item.")
+        }
+        else {
+            const newCart = [...cart, product]
+            setCart(newCart)
+        }
     }
     const pickRandom = () => {
         let newCart = [...cart]
         // console.log(newCart)
-        if (newCart.length >= 2) {
+        if (newCart.length) {
             let picked = newCart[Math.floor(Math.random() * newCart.length)]
             newCart = [picked]
             setCart(newCart)
         }
     }
     const removeFromCart = () => {
-        const newCart = []
-        setCart(newCart)
+        const cart = []
+        setCart(cart)
     }
     return (
         <div>
