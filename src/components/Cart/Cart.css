@@ -1,8 +1,11 @@
 .cart-item{
+    border-radius: 5px;
+    background-color:fuchsia;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px;
+    margin: 10px;
+    padding: 5px;
 }
 .cart-item img{
     border-radius: 40px;
