@@ -1,8 +1,8 @@
 .header{
     width: 100%;
-    color: crimson;
+    color: rgb(79, 108, 236);
     background-color: bisque;
-    padding: 3px;
+    padding: 5px;
 }
 .header h2{
     margin-bottom: 2px;
