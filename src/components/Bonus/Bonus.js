@@ -35,7 +35,7 @@ const Bonus = () => {
                         data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                             <p>
-                                We can access data from the previous factor the use of props as the data is being flowed in a unidirectional manner. React uses information transmission props that we want to transfer to various additives.
+                                We can access data from the previous factor by using props, as the data is being flowed in a unidirectional manner. React uses information transmission props that we want to transfer to various additives.
                                 The difference comes in which factor the data are owned. State is owned locally and the element itself updates it. Props are owned and read-handiest by a discern. Props may be changed only if an upstream shift is due to a callback characteristic exceeded directly to the child. A prop can be passed on to the child in the state of a figure. They practice to the same value but can only be updated by the parent variable.
                             </p>
                         </div>
